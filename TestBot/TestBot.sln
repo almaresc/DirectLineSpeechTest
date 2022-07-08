@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32203.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBot", "TestBot.csproj", "{9091C230-92DB-40DE-9416-3C7DF06858D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpc-client", "..\wpc-client\wpc-client.csproj", "{3FB3EFA0-88E3-4E66-B40F-4ADAE7199606}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9091C230-92DB-40DE-9416-3C7DF06858D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9091C230-92DB-40DE-9416-3C7DF06858D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9091C230-92DB-40DE-9416-3C7DF06858D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9091C230-92DB-40DE-9416-3C7DF06858D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB3EFA0-88E3-4E66-B40F-4ADAE7199606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB3EFA0-88E3-4E66-B40F-4ADAE7199606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB3EFA0-88E3-4E66-B40F-4ADAE7199606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB3EFA0-88E3-4E66-B40F-4ADAE7199606}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85013506-3D21-4C3A-B155-7887D01292BB}
+	EndGlobalSection
+EndGlobal

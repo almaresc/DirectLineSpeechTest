@@ -1,0 +1,48 @@
+﻿<Window x:Class="wpc_client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpc_client"
+        mc:Ignorable="d"
+        Title="Texa PoC" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="40"></RowDefinition>
+            <RowDefinition  Height="50"></RowDefinition>
+            <RowDefinition  Height="50"></RowDefinition>
+            <RowDefinition  Height="50"></RowDefinition>
+            <RowDefinition  Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Button Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="White"
+                Click="micBtn_Click" x:Name="micBtn">
+            <Image Source="resources/microphone.png" Stretch="Fill" Height="50" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="True" d:LayoutRounding="Auto" />
+
+        </Button>
+
+        <CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="inprogress">
+            <TextBlock Text="Simulate Analysis in progress" FontSize="10" Foreground="Black" />
+        </CheckBox>
+
+        <Button Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Background="DarkGreen" Height="50" Width="50" 
+                Click="reconnBtn_Click" x:Name="reconnBtn">
+            <TextBlock Text="Re-Conn" FontSize="10" Foreground="White" />
+        </Button>
+        
+      
+        <Border BorderThickness="2" BorderBrush="Green" Grid.Column="0" Grid.Row="2" 
+                   Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <ScrollViewer>
+            <TextBlock Text="Nothing to execute" FontSize="20" ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                   Foreground="Green"  x:Name="Notifiche"></TextBlock>
+                </ScrollViewer>
+        </Border>
+      
+    </Grid>
+</Window>
