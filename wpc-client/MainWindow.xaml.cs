@@ -42,7 +42,7 @@ namespace wpc_client
         #region Speech Events
         public void InitConnector() {
 
-            DialogServiceConfig config = BotFrameworkConfig.FromSubscription("f9c8910cd51c4c6a88ee5e55e68c5b89", "westeurope");
+            DialogServiceConfig config = BotFrameworkConfig.FromSubscription("xxxx", "westeurope");
             config.Language = "en-us";
             //config.SetProperty(PropertyId.SpeechServiceConnection_SynthLanguage, "en-us");
             //config.SetProperty(PropertyId. Speech_SegmentationSilenceTimeoutMs, "5000");
